@@ -3,7 +3,7 @@
 - Smart Cropper
 - Drawing & Add Text....
 ___
-Download release apk from myket play store
+Download release apk from myket store
 
 [![get on myket](get-en.png)](https://myket.ir/app/amir.sina.iz.doc.scanner)
 
