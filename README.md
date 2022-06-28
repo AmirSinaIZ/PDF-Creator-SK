@@ -5,7 +5,7 @@
 ___
 Download release apk from myket store
 
-[![get on myket](get-en.png =100×20)](https://myket.ir/app/amir.sina.iz.doc.scanner)
+[![get on myket](get-en.png)](https://myket.ir/app/amir.sina.iz.doc.scanner) =100×20
 
 ## ScreenShots
 
