@@ -1,0 +1,134 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<com.lwb.piechart.PieChartView
+					android:id="@+id/Pie"
+					android:layout_width="270dp"
+					android:layout_height="270dp"
+					android:layout_margin="8dp"
+					android:orientation="horizontal" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:text="GitHub api"
+					android:textSize="14sp"
+					android:textColor="#9E9E9E"
+					android:layout_gravity="left" />
+			</LinearLayout>
+			<ScrollView
+				android:id="@+id/vscroll1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="right"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="16dp"
+						android:layout_marginTop="16dp"
+						android:layout_marginRight="16dp"
+						android:text="اپلیکیشن « پی دی اف ساز » جهت راحتی در ساخت پی دی اف و اسکن اسناد منتشر شده هیچگونه تبلیغات و محدودیتی در استفاده از این اپلیکیشن وجود ندارد .\nهمچنین میتوانید سورس این اپلیکیشن را در گیت هاب و وبسایت آیبینو پیدا کنید."
+						android:textSize="16sp"
+						android:textColor="#616161" />
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="16dp"
+						android:layout_marginRight="16dp"
+						android:gravity="right|center_vertical"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="سازنده: AmirSinaIZ \nبا تشکر فراوان از: \npqpo\nArabWare"
+							android:textSize="16sp"
+							android:textColor="#616161" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="16dp"
+						android:layout_marginRight="16dp"
+						android:gravity="left|center_vertical"
+						android:orientation="horizontal">
+						<de.hdodenhof.circleimageview.CircleImageView
+							android:id="@+id/circleimageview1"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_margin="5dp"
+							android:src="@drawable/developers_2"
+							android:rotation="180"
+							android:layout_gravity="center_horizontal|center_vertical"
+							app:civ_border_width="3dp"
+							app:civ_border_color="#37375B"
+							app:civ_circle_background_color="#FFFFFF"
+							app:civ_border_overlay="true" />
+						<de.hdodenhof.circleimageview.CircleImageView
+							android:id="@+id/circleimageview2"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_margin="5dp"
+							android:src="@drawable/developers_1"
+							app:civ_border_width="3dp"
+							app:civ_border_color="#001DCD"
+							app:civ_circle_background_color="#FFFFFF"
+							app:civ_border_overlay="true" />
+						<de.hdodenhof.circleimageview.CircleImageView
+							android:id="@+id/circleimageview3"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:layout_margin="5dp"
+							android:src="@drawable/developers_3"
+							app:civ_border_width="3dp"
+							app:civ_border_color="#008DCD"
+							app:civ_circle_background_color="#FFFFFF"
+							app:civ_border_overlay="true" />
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

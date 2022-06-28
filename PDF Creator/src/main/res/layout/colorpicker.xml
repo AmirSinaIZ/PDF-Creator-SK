@@ -1,0 +1,80 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/bg2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="15dp"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:gravity="right"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/t12"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:text="یک رنگ انتخاب کنید"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
+		<com.flask.colorpicker.ColorPickerView
+			android:id="@+id/color_picker_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal|center_vertical"
+					app:alphaSlider="true"
+					app:density="12"
+					app:lightnessSlider="true"
+					app:wheelType="FLOWER"
+					app:lightnessSliderView="@+id/v_lightness_slider"
+				app:alphaSliderView="@+id/v_alpha_slider" />
+		<com.flask.colorpicker.slider.AlphaSlider
+			android:id="@+id/v_alpha_slider"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:layout_margin="8dp"
+			android:orientation="horizontal" />
+		<com.flask.colorpicker.slider.LightnessSlider
+			android:id="@+id/v_lightness_slider"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:layout_margin="8dp"
+			android:orientation="vertical" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:gravity="right"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/b12"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="لغو"
+				android:textSize="16sp"
+				android:textColor="#2196F3" />
+			<TextView
+				android:id="@+id/b22"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="انتخاب"
+				android:textSize="16sp"
+				android:textColor="#2196F3" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

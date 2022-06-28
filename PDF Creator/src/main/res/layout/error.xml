@@ -1,0 +1,80 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="16dp"
+				android:text="مشکلی پیش آمده لطفا مجدد وارد برنامه شوید "
+				android:textSize="16sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_weight="1">
+			<ScrollView
+				android:id="@+id/vscroll2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="16dp"
+				android:background="#E0E0E0">
+				<TextView
+					android:id="@+id/TextError"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="TextView"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</ScrollView>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear6"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:padding="8dp"
+				android:background="#37375B"
+				android:text="خروج از اپلیکیشن"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
