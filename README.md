@@ -7,10 +7,11 @@ Download release apk from myket store
 
 [![get on myket](get-en.png)](https://myket.ir/app/amir.sina.iz.doc.scanner)
 
-## ScreenShots
-
-
-![main](img/main.jpg) ![crop](img/crop.jpg) ![edit](img/edit.jpg) ![create](img/create.jpg)
+## Screenshots
+<img src="./img/main.jpg?raw=true" width="23%" /> <img 
+     src="./img/crop.jpg?raw=true" width="23%" /> <img
+     src="./img/edit.jpg?raw=true" width="23%" /> <img
+     src="./img/create.jpg?raw=true" width="23%" />
 
 ## Requirements
 - Open CV SDK 
